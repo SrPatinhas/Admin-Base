@@ -9,14 +9,11 @@ class UsersTableSeeder extends Seeder
     {
         $users = [
             [
-                'id'                 => 1,
-                'name'               => 'Admin',
-                'email'              => 'admin@admin.com',
-                'password'           => '$2y$10$U46wo.NlbAfilc889tmlfuZyyNNOPJAmg9WJ.NOT6jbqzZNmMnFyK',
-                'remember_token'     => null,
-                'verified'           => 1,
-                'verified_at'        => '2020-02-17 18:13:15',
-                'verification_token' => '',
+                'id'             => 1,
+                'name'           => 'Admin',
+                'email'          => 'admin@admin.com',
+                'password'       => '$2y$10$tohVzyKpsZ4d8uBE5o1oA.4J7nBOFNmivohTVXeAntfYYzVOSU87W',
+                'remember_token' => null,
             ],
         ];
 

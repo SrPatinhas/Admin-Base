@@ -74,379 +74,279 @@ class PermissionsTableSeeder extends Seeder
             ],
             [
                 'id'    => '17',
-                'title' => 'product_management_access',
+                'title' => 'expense_management_access',
             ],
             [
                 'id'    => '18',
-                'title' => 'product_category_create',
+                'title' => 'expense_category_create',
             ],
             [
                 'id'    => '19',
-                'title' => 'product_category_edit',
+                'title' => 'expense_category_edit',
             ],
             [
                 'id'    => '20',
-                'title' => 'product_category_show',
+                'title' => 'expense_category_show',
             ],
             [
                 'id'    => '21',
-                'title' => 'product_category_delete',
+                'title' => 'expense_category_delete',
             ],
             [
                 'id'    => '22',
-                'title' => 'product_category_access',
+                'title' => 'expense_category_access',
             ],
             [
                 'id'    => '23',
-                'title' => 'product_tag_create',
+                'title' => 'income_category_create',
             ],
             [
                 'id'    => '24',
-                'title' => 'product_tag_edit',
+                'title' => 'income_category_edit',
             ],
             [
                 'id'    => '25',
-                'title' => 'product_tag_show',
+                'title' => 'income_category_show',
             ],
             [
                 'id'    => '26',
-                'title' => 'product_tag_delete',
+                'title' => 'income_category_delete',
             ],
             [
                 'id'    => '27',
-                'title' => 'product_tag_access',
+                'title' => 'income_category_access',
             ],
             [
                 'id'    => '28',
-                'title' => 'product_create',
+                'title' => 'expense_create',
             ],
             [
                 'id'    => '29',
-                'title' => 'product_edit',
+                'title' => 'expense_edit',
             ],
             [
                 'id'    => '30',
-                'title' => 'product_show',
+                'title' => 'expense_show',
             ],
             [
                 'id'    => '31',
-                'title' => 'product_delete',
+                'title' => 'expense_delete',
             ],
             [
                 'id'    => '32',
-                'title' => 'product_access',
+                'title' => 'expense_access',
             ],
             [
                 'id'    => '33',
-                'title' => 'basic_c_r_m_access',
+                'title' => 'income_create',
             ],
             [
                 'id'    => '34',
-                'title' => 'crm_status_create',
+                'title' => 'income_edit',
             ],
             [
                 'id'    => '35',
-                'title' => 'crm_status_edit',
+                'title' => 'income_show',
             ],
             [
                 'id'    => '36',
-                'title' => 'crm_status_show',
+                'title' => 'income_delete',
             ],
             [
                 'id'    => '37',
-                'title' => 'crm_status_delete',
+                'title' => 'income_access',
             ],
             [
                 'id'    => '38',
-                'title' => 'crm_status_access',
+                'title' => 'expense_report_create',
             ],
             [
                 'id'    => '39',
-                'title' => 'crm_customer_create',
+                'title' => 'expense_report_edit',
             ],
             [
                 'id'    => '40',
-                'title' => 'crm_customer_edit',
+                'title' => 'expense_report_show',
             ],
             [
                 'id'    => '41',
-                'title' => 'crm_customer_show',
+                'title' => 'expense_report_delete',
             ],
             [
                 'id'    => '42',
-                'title' => 'crm_customer_delete',
+                'title' => 'expense_report_access',
             ],
             [
                 'id'    => '43',
-                'title' => 'crm_customer_access',
+                'title' => 'contact_management_access',
             ],
             [
                 'id'    => '44',
-                'title' => 'crm_note_create',
+                'title' => 'contact_company_create',
             ],
             [
                 'id'    => '45',
-                'title' => 'crm_note_edit',
+                'title' => 'contact_company_edit',
             ],
             [
                 'id'    => '46',
-                'title' => 'crm_note_show',
+                'title' => 'contact_company_show',
             ],
             [
                 'id'    => '47',
-                'title' => 'crm_note_delete',
+                'title' => 'contact_company_delete',
             ],
             [
                 'id'    => '48',
-                'title' => 'crm_note_access',
+                'title' => 'contact_company_access',
             ],
             [
                 'id'    => '49',
-                'title' => 'crm_document_create',
+                'title' => 'contact_contact_create',
             ],
             [
                 'id'    => '50',
-                'title' => 'crm_document_edit',
+                'title' => 'contact_contact_edit',
             ],
             [
                 'id'    => '51',
-                'title' => 'crm_document_show',
+                'title' => 'contact_contact_show',
             ],
             [
                 'id'    => '52',
-                'title' => 'crm_document_delete',
+                'title' => 'contact_contact_delete',
             ],
             [
                 'id'    => '53',
-                'title' => 'crm_document_access',
+                'title' => 'contact_contact_access',
             ],
             [
                 'id'    => '54',
-                'title' => 'client_management_setting_access',
+                'title' => 'faq_management_access',
             ],
             [
                 'id'    => '55',
-                'title' => 'currency_create',
+                'title' => 'faq_category_create',
             ],
             [
                 'id'    => '56',
-                'title' => 'currency_edit',
+                'title' => 'faq_category_edit',
             ],
             [
                 'id'    => '57',
-                'title' => 'currency_show',
+                'title' => 'faq_category_show',
             ],
             [
                 'id'    => '58',
-                'title' => 'currency_delete',
+                'title' => 'faq_category_delete',
             ],
             [
                 'id'    => '59',
-                'title' => 'currency_access',
+                'title' => 'faq_category_access',
             ],
             [
                 'id'    => '60',
-                'title' => 'transaction_type_create',
+                'title' => 'faq_question_create',
             ],
             [
                 'id'    => '61',
-                'title' => 'transaction_type_edit',
+                'title' => 'faq_question_edit',
             ],
             [
                 'id'    => '62',
-                'title' => 'transaction_type_show',
+                'title' => 'faq_question_show',
             ],
             [
                 'id'    => '63',
-                'title' => 'transaction_type_delete',
+                'title' => 'faq_question_delete',
             ],
             [
                 'id'    => '64',
-                'title' => 'transaction_type_access',
+                'title' => 'faq_question_access',
             ],
             [
                 'id'    => '65',
-                'title' => 'income_source_create',
+                'title' => 'time_management_access',
             ],
             [
                 'id'    => '66',
-                'title' => 'income_source_edit',
+                'title' => 'time_work_type_create',
             ],
             [
                 'id'    => '67',
-                'title' => 'income_source_show',
+                'title' => 'time_work_type_edit',
             ],
             [
                 'id'    => '68',
-                'title' => 'income_source_delete',
+                'title' => 'time_work_type_show',
             ],
             [
                 'id'    => '69',
-                'title' => 'income_source_access',
+                'title' => 'time_work_type_delete',
             ],
             [
                 'id'    => '70',
-                'title' => 'client_status_create',
+                'title' => 'time_work_type_access',
             ],
             [
                 'id'    => '71',
-                'title' => 'client_status_edit',
+                'title' => 'time_project_create',
             ],
             [
                 'id'    => '72',
-                'title' => 'client_status_show',
+                'title' => 'time_project_edit',
             ],
             [
                 'id'    => '73',
-                'title' => 'client_status_delete',
+                'title' => 'time_project_show',
             ],
             [
                 'id'    => '74',
-                'title' => 'client_status_access',
+                'title' => 'time_project_delete',
             ],
             [
                 'id'    => '75',
-                'title' => 'project_status_create',
+                'title' => 'time_project_access',
             ],
             [
                 'id'    => '76',
-                'title' => 'project_status_edit',
+                'title' => 'time_entry_create',
             ],
             [
                 'id'    => '77',
-                'title' => 'project_status_show',
+                'title' => 'time_entry_edit',
             ],
             [
                 'id'    => '78',
-                'title' => 'project_status_delete',
+                'title' => 'time_entry_show',
             ],
             [
                 'id'    => '79',
-                'title' => 'project_status_access',
+                'title' => 'time_entry_delete',
             ],
             [
                 'id'    => '80',
-                'title' => 'client_management_access',
+                'title' => 'time_entry_access',
             ],
             [
                 'id'    => '81',
-                'title' => 'client_create',
+                'title' => 'time_report_create',
             ],
             [
                 'id'    => '82',
-                'title' => 'client_edit',
+                'title' => 'time_report_edit',
             ],
             [
                 'id'    => '83',
-                'title' => 'client_show',
+                'title' => 'time_report_show',
             ],
             [
                 'id'    => '84',
-                'title' => 'client_delete',
+                'title' => 'time_report_delete',
             ],
             [
                 'id'    => '85',
-                'title' => 'client_access',
-            ],
-            [
-                'id'    => '86',
-                'title' => 'project_create',
-            ],
-            [
-                'id'    => '87',
-                'title' => 'project_edit',
-            ],
-            [
-                'id'    => '88',
-                'title' => 'project_show',
-            ],
-            [
-                'id'    => '89',
-                'title' => 'project_delete',
-            ],
-            [
-                'id'    => '90',
-                'title' => 'project_access',
-            ],
-            [
-                'id'    => '91',
-                'title' => 'note_create',
-            ],
-            [
-                'id'    => '92',
-                'title' => 'note_edit',
-            ],
-            [
-                'id'    => '93',
-                'title' => 'note_show',
-            ],
-            [
-                'id'    => '94',
-                'title' => 'note_delete',
-            ],
-            [
-                'id'    => '95',
-                'title' => 'note_access',
-            ],
-            [
-                'id'    => '96',
-                'title' => 'document_create',
-            ],
-            [
-                'id'    => '97',
-                'title' => 'document_edit',
-            ],
-            [
-                'id'    => '98',
-                'title' => 'document_show',
-            ],
-            [
-                'id'    => '99',
-                'title' => 'document_delete',
-            ],
-            [
-                'id'    => '100',
-                'title' => 'document_access',
-            ],
-            [
-                'id'    => '101',
-                'title' => 'transaction_create',
-            ],
-            [
-                'id'    => '102',
-                'title' => 'transaction_edit',
-            ],
-            [
-                'id'    => '103',
-                'title' => 'transaction_show',
-            ],
-            [
-                'id'    => '104',
-                'title' => 'transaction_delete',
-            ],
-            [
-                'id'    => '105',
-                'title' => 'transaction_access',
-            ],
-            [
-                'id'    => '106',
-                'title' => 'client_report_create',
-            ],
-            [
-                'id'    => '107',
-                'title' => 'client_report_edit',
-            ],
-            [
-                'id'    => '108',
-                'title' => 'client_report_show',
-            ],
-            [
-                'id'    => '109',
-                'title' => 'client_report_delete',
-            ],
-            [
-                'id'    => '110',
-                'title' => 'client_report_access',
+                'title' => 'time_report_access',
             ],
         ];
 

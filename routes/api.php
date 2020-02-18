@@ -10,58 +10,36 @@ Route::group(['prefix' => 'v1', 'as' => 'api.', 'namespace' => 'Api\V1\Admin', '
     // Users
     Route::apiResource('users', 'UsersApiController');
 
-    // Product Categories
-    Route::post('product-categories/media', 'ProductCategoryApiController@storeMedia')->name('product-categories.storeMedia');
-    Route::apiResource('product-categories', 'ProductCategoryApiController');
+    // Expense Categories
+    Route::apiResource('expense-categories', 'ExpenseCategoryApiController');
 
-    // Product Tags
-    Route::apiResource('product-tags', 'ProductTagApiController');
+    // Income Categories
+    Route::apiResource('income-categories', 'IncomeCategoryApiController');
 
-    // Products
-    Route::post('products/media', 'ProductApiController@storeMedia')->name('products.storeMedia');
-    Route::apiResource('products', 'ProductApiController');
+    // Expenses
+    Route::apiResource('expenses', 'ExpenseApiController');
 
-    // Crm Statuses
-    Route::apiResource('crm-statuses', 'CrmStatusApiController');
+    // Incomes
+    Route::apiResource('incomes', 'IncomeApiController');
 
-    // Crm Customers
-    Route::apiResource('crm-customers', 'CrmCustomerApiController');
+    // Contact Companies
+    Route::apiResource('contact-companies', 'ContactCompanyApiController');
 
-    // Crm Notes
-    Route::apiResource('crm-notes', 'CrmNoteApiController');
+    // Contact Contacts
+    Route::apiResource('contact-contacts', 'ContactContactsApiController');
 
-    // Crm Documents
-    Route::post('crm-documents/media', 'CrmDocumentApiController@storeMedia')->name('crm-documents.storeMedia');
-    Route::apiResource('crm-documents', 'CrmDocumentApiController');
+    // Faq Categories
+    Route::apiResource('faq-categories', 'FaqCategoryApiController');
 
-    // Currencies
-    Route::apiResource('currencies', 'CurrencyApiController');
+    // Faq Questions
+    Route::apiResource('faq-questions', 'FaqQuestionApiController');
 
-    // Transaction Types
-    Route::apiResource('transaction-types', 'TransactionTypeApiController');
+    // Time Work Types
+    Route::apiResource('time-work-types', 'TimeWorkTypeApiController');
 
-    // Income Sources
-    Route::apiResource('income-sources', 'IncomeSourceApiController');
+    // Time Projects
+    Route::apiResource('time-projects', 'TimeProjectApiController');
 
-    // Client Statuses
-    Route::apiResource('client-statuses', 'ClientStatusApiController');
-
-    // Project Statuses
-    Route::apiResource('project-statuses', 'ProjectStatusApiController');
-
-    // Clients
-    Route::apiResource('clients', 'ClientApiController');
-
-    // Projects
-    Route::apiResource('projects', 'ProjectApiController');
-
-    // Notes
-    Route::apiResource('notes', 'NoteApiController');
-
-    // Documents
-    Route::post('documents/media', 'DocumentApiController@storeMedia')->name('documents.storeMedia');
-    Route::apiResource('documents', 'DocumentApiController');
-
-    // Transactions
-    Route::apiResource('transactions', 'TransactionApiController');
+    // Time Entries
+    Route::apiResource('time-entries', 'TimeEntryApiController');
 });
