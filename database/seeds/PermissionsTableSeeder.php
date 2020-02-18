@@ -74,378 +74,246 @@ class PermissionsTableSeeder extends Seeder
             ],
             [
                 'id'    => '17',
-                'title' => 'product_management_access',
+                'title' => 'user_alert_create',
             ],
             [
                 'id'    => '18',
-                'title' => 'product_category_create',
+                'title' => 'user_alert_show',
             ],
             [
                 'id'    => '19',
-                'title' => 'product_category_edit',
+                'title' => 'user_alert_delete',
             ],
             [
                 'id'    => '20',
-                'title' => 'product_category_show',
+                'title' => 'user_alert_access',
             ],
             [
                 'id'    => '21',
-                'title' => 'product_category_delete',
-            ],
-            [
-                'id'    => '22',
-                'title' => 'product_category_access',
-            ],
-            [
-                'id'    => '23',
-                'title' => 'product_tag_create',
-            ],
-            [
-                'id'    => '24',
-                'title' => 'product_tag_edit',
-            ],
-            [
-                'id'    => '25',
-                'title' => 'product_tag_show',
-            ],
-            [
-                'id'    => '26',
-                'title' => 'product_tag_delete',
-            ],
-            [
-                'id'    => '27',
-                'title' => 'product_tag_access',
-            ],
-            [
-                'id'    => '28',
-                'title' => 'product_create',
-            ],
-            [
-                'id'    => '29',
-                'title' => 'product_edit',
-            ],
-            [
-                'id'    => '30',
-                'title' => 'product_show',
-            ],
-            [
-                'id'    => '31',
-                'title' => 'product_delete',
-            ],
-            [
-                'id'    => '32',
-                'title' => 'product_access',
-            ],
-            [
-                'id'    => '33',
-                'title' => 'basic_c_r_m_access',
-            ],
-            [
-                'id'    => '34',
-                'title' => 'crm_status_create',
-            ],
-            [
-                'id'    => '35',
-                'title' => 'crm_status_edit',
-            ],
-            [
-                'id'    => '36',
-                'title' => 'crm_status_show',
-            ],
-            [
-                'id'    => '37',
-                'title' => 'crm_status_delete',
-            ],
-            [
-                'id'    => '38',
-                'title' => 'crm_status_access',
-            ],
-            [
-                'id'    => '39',
-                'title' => 'crm_customer_create',
-            ],
-            [
-                'id'    => '40',
-                'title' => 'crm_customer_edit',
-            ],
-            [
-                'id'    => '41',
-                'title' => 'crm_customer_show',
-            ],
-            [
-                'id'    => '42',
-                'title' => 'crm_customer_delete',
-            ],
-            [
-                'id'    => '43',
-                'title' => 'crm_customer_access',
-            ],
-            [
-                'id'    => '44',
-                'title' => 'crm_note_create',
-            ],
-            [
-                'id'    => '45',
-                'title' => 'crm_note_edit',
-            ],
-            [
-                'id'    => '46',
-                'title' => 'crm_note_show',
-            ],
-            [
-                'id'    => '47',
-                'title' => 'crm_note_delete',
-            ],
-            [
-                'id'    => '48',
-                'title' => 'crm_note_access',
-            ],
-            [
-                'id'    => '49',
-                'title' => 'crm_document_create',
-            ],
-            [
-                'id'    => '50',
-                'title' => 'crm_document_edit',
-            ],
-            [
-                'id'    => '51',
-                'title' => 'crm_document_show',
-            ],
-            [
-                'id'    => '52',
-                'title' => 'crm_document_delete',
-            ],
-            [
-                'id'    => '53',
-                'title' => 'crm_document_access',
-            ],
-            [
-                'id'    => '54',
                 'title' => 'client_management_setting_access',
             ],
             [
-                'id'    => '55',
+                'id'    => '22',
                 'title' => 'currency_create',
             ],
             [
-                'id'    => '56',
+                'id'    => '23',
                 'title' => 'currency_edit',
             ],
             [
-                'id'    => '57',
+                'id'    => '24',
                 'title' => 'currency_show',
             ],
             [
-                'id'    => '58',
+                'id'    => '25',
                 'title' => 'currency_delete',
             ],
             [
-                'id'    => '59',
+                'id'    => '26',
                 'title' => 'currency_access',
             ],
             [
-                'id'    => '60',
+                'id'    => '27',
                 'title' => 'transaction_type_create',
             ],
             [
-                'id'    => '61',
+                'id'    => '28',
                 'title' => 'transaction_type_edit',
             ],
             [
-                'id'    => '62',
+                'id'    => '29',
                 'title' => 'transaction_type_show',
             ],
             [
-                'id'    => '63',
+                'id'    => '30',
                 'title' => 'transaction_type_delete',
             ],
             [
-                'id'    => '64',
+                'id'    => '31',
                 'title' => 'transaction_type_access',
             ],
             [
-                'id'    => '65',
+                'id'    => '32',
                 'title' => 'income_source_create',
             ],
             [
-                'id'    => '66',
+                'id'    => '33',
                 'title' => 'income_source_edit',
             ],
             [
-                'id'    => '67',
+                'id'    => '34',
                 'title' => 'income_source_show',
             ],
             [
-                'id'    => '68',
+                'id'    => '35',
                 'title' => 'income_source_delete',
             ],
             [
-                'id'    => '69',
+                'id'    => '36',
                 'title' => 'income_source_access',
             ],
             [
-                'id'    => '70',
+                'id'    => '37',
                 'title' => 'client_status_create',
             ],
             [
-                'id'    => '71',
+                'id'    => '38',
                 'title' => 'client_status_edit',
             ],
             [
-                'id'    => '72',
+                'id'    => '39',
                 'title' => 'client_status_show',
             ],
             [
-                'id'    => '73',
+                'id'    => '40',
                 'title' => 'client_status_delete',
             ],
             [
-                'id'    => '74',
+                'id'    => '41',
                 'title' => 'client_status_access',
             ],
             [
-                'id'    => '75',
+                'id'    => '42',
                 'title' => 'project_status_create',
             ],
             [
-                'id'    => '76',
+                'id'    => '43',
                 'title' => 'project_status_edit',
             ],
             [
-                'id'    => '77',
+                'id'    => '44',
                 'title' => 'project_status_show',
             ],
             [
-                'id'    => '78',
+                'id'    => '45',
                 'title' => 'project_status_delete',
             ],
             [
-                'id'    => '79',
+                'id'    => '46',
                 'title' => 'project_status_access',
             ],
             [
-                'id'    => '80',
+                'id'    => '47',
                 'title' => 'client_management_access',
             ],
             [
-                'id'    => '81',
+                'id'    => '48',
                 'title' => 'client_create',
             ],
             [
-                'id'    => '82',
+                'id'    => '49',
                 'title' => 'client_edit',
             ],
             [
-                'id'    => '83',
+                'id'    => '50',
                 'title' => 'client_show',
             ],
             [
-                'id'    => '84',
+                'id'    => '51',
                 'title' => 'client_delete',
             ],
             [
-                'id'    => '85',
+                'id'    => '52',
                 'title' => 'client_access',
             ],
             [
-                'id'    => '86',
+                'id'    => '53',
                 'title' => 'project_create',
             ],
             [
-                'id'    => '87',
+                'id'    => '54',
                 'title' => 'project_edit',
             ],
             [
-                'id'    => '88',
+                'id'    => '55',
                 'title' => 'project_show',
             ],
             [
-                'id'    => '89',
+                'id'    => '56',
                 'title' => 'project_delete',
             ],
             [
-                'id'    => '90',
+                'id'    => '57',
                 'title' => 'project_access',
             ],
             [
-                'id'    => '91',
+                'id'    => '58',
                 'title' => 'note_create',
             ],
             [
-                'id'    => '92',
+                'id'    => '59',
                 'title' => 'note_edit',
             ],
             [
-                'id'    => '93',
+                'id'    => '60',
                 'title' => 'note_show',
             ],
             [
-                'id'    => '94',
+                'id'    => '61',
                 'title' => 'note_delete',
             ],
             [
-                'id'    => '95',
+                'id'    => '62',
                 'title' => 'note_access',
             ],
             [
-                'id'    => '96',
+                'id'    => '63',
                 'title' => 'document_create',
             ],
             [
-                'id'    => '97',
+                'id'    => '64',
                 'title' => 'document_edit',
             ],
             [
-                'id'    => '98',
+                'id'    => '65',
                 'title' => 'document_show',
             ],
             [
-                'id'    => '99',
+                'id'    => '66',
                 'title' => 'document_delete',
             ],
             [
-                'id'    => '100',
+                'id'    => '67',
                 'title' => 'document_access',
             ],
             [
-                'id'    => '101',
+                'id'    => '68',
                 'title' => 'transaction_create',
             ],
             [
-                'id'    => '102',
+                'id'    => '69',
                 'title' => 'transaction_edit',
             ],
             [
-                'id'    => '103',
+                'id'    => '70',
                 'title' => 'transaction_show',
             ],
             [
-                'id'    => '104',
+                'id'    => '71',
                 'title' => 'transaction_delete',
             ],
             [
-                'id'    => '105',
+                'id'    => '72',
                 'title' => 'transaction_access',
             ],
             [
-                'id'    => '106',
+                'id'    => '73',
                 'title' => 'client_report_create',
             ],
             [
-                'id'    => '107',
+                'id'    => '74',
                 'title' => 'client_report_edit',
             ],
             [
-                'id'    => '108',
+                'id'    => '75',
                 'title' => 'client_report_show',
             ],
             [
-                'id'    => '109',
+                'id'    => '76',
                 'title' => 'client_report_delete',
             ],
             [
-                'id'    => '110',
+                'id'    => '77',
                 'title' => 'client_report_access',
             ],
         ];

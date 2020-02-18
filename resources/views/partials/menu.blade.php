@@ -52,98 +52,14 @@
                     </ul>
                 </li>
             @endcan
-            @can('product_management_access')
-                <li class="nav-item nav-dropdown">
-                    <a class="nav-link  nav-dropdown-toggle" href="#">
-                        <i class="fa-fw fas fa-shopping-cart nav-icon">
+            @can('user_alert_access')
+                <li class="nav-item">
+                    <a href="{{ route("admin.user-alerts.index") }}" class="nav-link {{ request()->is('admin/user-alerts') || request()->is('admin/user-alerts/*') ? 'active' : '' }}">
+                        <i class="fa-fw fas fa-bell nav-icon">
 
                         </i>
-                        {{ trans('cruds.productManagement.title') }}
+                        {{ trans('cruds.userAlert.title') }}
                     </a>
-                    <ul class="nav-dropdown-items">
-                        @can('product_category_access')
-                            <li class="nav-item">
-                                <a href="{{ route("admin.product-categories.index") }}" class="nav-link {{ request()->is('admin/product-categories') || request()->is('admin/product-categories/*') ? 'active' : '' }}">
-                                    <i class="fa-fw fas fa-folder nav-icon">
-
-                                    </i>
-                                    {{ trans('cruds.productCategory.title') }}
-                                </a>
-                            </li>
-                        @endcan
-                        @can('product_tag_access')
-                            <li class="nav-item">
-                                <a href="{{ route("admin.product-tags.index") }}" class="nav-link {{ request()->is('admin/product-tags') || request()->is('admin/product-tags/*') ? 'active' : '' }}">
-                                    <i class="fa-fw fas fa-folder nav-icon">
-
-                                    </i>
-                                    {{ trans('cruds.productTag.title') }}
-                                </a>
-                            </li>
-                        @endcan
-                        @can('product_access')
-                            <li class="nav-item">
-                                <a href="{{ route("admin.products.index") }}" class="nav-link {{ request()->is('admin/products') || request()->is('admin/products/*') ? 'active' : '' }}">
-                                    <i class="fa-fw fas fa-shopping-cart nav-icon">
-
-                                    </i>
-                                    {{ trans('cruds.product.title') }}
-                                </a>
-                            </li>
-                        @endcan
-                    </ul>
-                </li>
-            @endcan
-            @can('basic_c_r_m_access')
-                <li class="nav-item nav-dropdown">
-                    <a class="nav-link  nav-dropdown-toggle" href="#">
-                        <i class="fa-fw fas fa-briefcase nav-icon">
-
-                        </i>
-                        {{ trans('cruds.basicCRM.title') }}
-                    </a>
-                    <ul class="nav-dropdown-items">
-                        @can('crm_status_access')
-                            <li class="nav-item">
-                                <a href="{{ route("admin.crm-statuses.index") }}" class="nav-link {{ request()->is('admin/crm-statuses') || request()->is('admin/crm-statuses/*') ? 'active' : '' }}">
-                                    <i class="fa-fw fas fa-folder nav-icon">
-
-                                    </i>
-                                    {{ trans('cruds.crmStatus.title') }}
-                                </a>
-                            </li>
-                        @endcan
-                        @can('crm_customer_access')
-                            <li class="nav-item">
-                                <a href="{{ route("admin.crm-customers.index") }}" class="nav-link {{ request()->is('admin/crm-customers') || request()->is('admin/crm-customers/*') ? 'active' : '' }}">
-                                    <i class="fa-fw fas fa-user-plus nav-icon">
-
-                                    </i>
-                                    {{ trans('cruds.crmCustomer.title') }}
-                                </a>
-                            </li>
-                        @endcan
-                        @can('crm_note_access')
-                            <li class="nav-item">
-                                <a href="{{ route("admin.crm-notes.index") }}" class="nav-link {{ request()->is('admin/crm-notes') || request()->is('admin/crm-notes/*') ? 'active' : '' }}">
-                                    <i class="fa-fw fas fa-sticky-note nav-icon">
-
-                                    </i>
-                                    {{ trans('cruds.crmNote.title') }}
-                                </a>
-                            </li>
-                        @endcan
-                        @can('crm_document_access')
-                            <li class="nav-item">
-                                <a href="{{ route("admin.crm-documents.index") }}" class="nav-link {{ request()->is('admin/crm-documents') || request()->is('admin/crm-documents/*') ? 'active' : '' }}">
-                                    <i class="fa-fw fas fa-folder nav-icon">
-
-                                    </i>
-                                    {{ trans('cruds.crmDocument.title') }}
-                                </a>
-                            </li>
-                        @endcan
-                    </ul>
                 </li>
             @endcan
             @can('client_management_setting_access')
@@ -280,14 +196,26 @@
                     </ul>
                 </li>
             @endcan
-            <li class="nav-item">
-                <a href="#" class="nav-link" onclick="event.preventDefault(); document.getElementById('logoutform').submit();">
-                    <i class="nav-icon fas fa-fw fa-sign-out-alt">
+            @php($unread = \App\QaTopic::unreadCount())
+                <li class="nav-item">
+                    <a href="{{ route("admin.messenger.index") }}" class="{{ request()->is('admin/messenger') || request()->is('admin/messenger/*') ? 'active' : '' }} nav-link">
+                        <i class="nav-icon fa-fw fa fa-envelope">
 
-                    </i>
-                    {{ trans('global.logout') }}
-                </a>
-            </li>
+                        </i>
+                        <span>{{ trans('global.messages') }}</span>
+                        @if($unread > 0)
+                            <strong>( {{ $unread }} )</strong>
+                        @endif
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" onclick="event.preventDefault(); document.getElementById('logoutform').submit();">
+                        <i class="nav-icon fas fa-fw fa-sign-out-alt">
+
+                        </i>
+                        {{ trans('global.logout') }}
+                    </a>
+                </li>
         </ul>
 
     </nav>

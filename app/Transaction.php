@@ -33,6 +33,13 @@ class Transaction extends Model
         'transaction_type_id',
     ];
 
+    public static function boot()
+    {
+        parent::boot();
+
+        Transaction::observe(new \App\Observers\TransactionActionObserver);
+    }
+
     public function project()
     {
         return $this->belongsTo(Project::class, 'project_id');

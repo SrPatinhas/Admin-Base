@@ -36,6 +36,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'approved',
         'verified',
         'created_at',
         'updated_at',
@@ -80,6 +81,18 @@ class User extends Authenticatable
                 $user->notify(new VerifyUserNotification($user));
             }
         });
+    }
+
+    public static function boot()
+    {
+        parent::boot();
+
+        User::observe(new \App\Observers\UserActionObserver);
+    }
+
+    public function userUserAlerts()
+    {
+        return $this->belongsToMany(UserAlert::class);
     }
 
     public function getEmailVerifiedAtAttribute($value)
