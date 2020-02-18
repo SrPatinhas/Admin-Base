@@ -49,10 +49,10 @@
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('cruds.user.fields.verified') }}
+                            {{ trans('cruds.user.fields.approved') }}
                         </th>
                         <td>
-                            <input type="checkbox" disabled="disabled" {{ $user->verified ? 'checked' : '' }}>
+                            <input type="checkbox" disabled="disabled" {{ $user->approved ? 'checked' : '' }}>
                         </td>
                     </tr>
                     <tr>
@@ -76,6 +76,30 @@
     </div>
 </div>
 
-
+<div class="card">
+    <div class="card-header">
+        {{ trans('global.relatedData') }}
+    </div>
+    <ul class="nav nav-tabs" role="tablist" id="relationship-tabs">
+        <li class="nav-item">
+            <a class="nav-link" href="#assigned_to_assets" role="tab" data-toggle="tab">
+                {{ trans('cruds.asset.title') }}
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#assigned_user_assets_histories" role="tab" data-toggle="tab">
+                {{ trans('cruds.assetsHistory.title') }}
+            </a>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane" role="tabpanel" id="assigned_to_assets">
+            @includeIf('admin.users.relationships.assignedToAssets', ['assets' => $user->assignedToAssets])
+        </div>
+        <div class="tab-pane" role="tabpanel" id="assigned_user_assets_histories">
+            @includeIf('admin.users.relationships.assignedUserAssetsHistories', ['assetsHistories' => $user->assignedUserAssetsHistories])
+        </div>
+    </div>
+</div>
 
 @endsection
