@@ -10,58 +10,23 @@ Route::group(['prefix' => 'v1', 'as' => 'api.', 'namespace' => 'Api\V1\Admin', '
     // Users
     Route::apiResource('users', 'UsersApiController');
 
-    // Product Categories
-    Route::post('product-categories/media', 'ProductCategoryApiController@storeMedia')->name('product-categories.storeMedia');
-    Route::apiResource('product-categories', 'ProductCategoryApiController');
+    // Task Statuses
+    Route::apiResource('task-statuses', 'TaskStatusApiController');
 
-    // Product Tags
-    Route::apiResource('product-tags', 'ProductTagApiController');
+    // Task Tags
+    Route::apiResource('task-tags', 'TaskTagApiController');
 
-    // Products
-    Route::post('products/media', 'ProductApiController@storeMedia')->name('products.storeMedia');
-    Route::apiResource('products', 'ProductApiController');
+    // Tasks
+    Route::post('tasks/media', 'TaskApiController@storeMedia')->name('tasks.storeMedia');
+    Route::apiResource('tasks', 'TaskApiController');
 
-    // Crm Statuses
-    Route::apiResource('crm-statuses', 'CrmStatusApiController');
+    // Content Categories
+    Route::apiResource('content-categories', 'ContentCategoryApiController');
 
-    // Crm Customers
-    Route::apiResource('crm-customers', 'CrmCustomerApiController');
+    // Content Tags
+    Route::apiResource('content-tags', 'ContentTagApiController');
 
-    // Crm Notes
-    Route::apiResource('crm-notes', 'CrmNoteApiController');
-
-    // Crm Documents
-    Route::post('crm-documents/media', 'CrmDocumentApiController@storeMedia')->name('crm-documents.storeMedia');
-    Route::apiResource('crm-documents', 'CrmDocumentApiController');
-
-    // Currencies
-    Route::apiResource('currencies', 'CurrencyApiController');
-
-    // Transaction Types
-    Route::apiResource('transaction-types', 'TransactionTypeApiController');
-
-    // Income Sources
-    Route::apiResource('income-sources', 'IncomeSourceApiController');
-
-    // Client Statuses
-    Route::apiResource('client-statuses', 'ClientStatusApiController');
-
-    // Project Statuses
-    Route::apiResource('project-statuses', 'ProjectStatusApiController');
-
-    // Clients
-    Route::apiResource('clients', 'ClientApiController');
-
-    // Projects
-    Route::apiResource('projects', 'ProjectApiController');
-
-    // Notes
-    Route::apiResource('notes', 'NoteApiController');
-
-    // Documents
-    Route::post('documents/media', 'DocumentApiController@storeMedia')->name('documents.storeMedia');
-    Route::apiResource('documents', 'DocumentApiController');
-
-    // Transactions
-    Route::apiResource('transactions', 'TransactionApiController');
+    // Content Pages
+    Route::post('content-pages/media', 'ContentPageApiController@storeMedia')->name('content-pages.storeMedia');
+    Route::apiResource('content-pages', 'ContentPageApiController');
 });
